@@ -409,7 +409,7 @@ def build_roleplay_rewards(llm: BaseChatModel, tokenizer: PreTrainedTokenizerFas
         build_roleplay_fits_character_reward(llm, tokenizer, max_length, **kwargs),
         build_roleplay_environment_integrity_reward(llm, tokenizer, max_length, **kwargs),
         build_roleplay_language_style_reward(llm, tokenizer, max_length, **kwargs),
-        build_roleplay_consistent_reward(llm, tokenizer, max_length),
+        build_roleplay_consistent_reward(llm, tokenizer, max_length, **kwargs),
     ]
 # endregion Roleplay rewards
 
